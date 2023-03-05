@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DataMemory.srcs/sources_1/new/ALU.v" \
+"../../../../DataMemory.srcs/sim_1/new/ALU_tb.v" \
+"../../../../DataMemory.srcs/sim_1/new/DataMemory_tb.v" \
+"../../../../DataMemory.srcs/sources_1/new/Data_Memory.v" \
+"../../../../DataMemory.srcs/sources_1/new/Mux.v" \
+"../../../../DataMemory.srcs/sim_1/new/Mux_tb.v" \
+"../../../../DataMemory.srcs/sources_1/new/ProgramMemory.v" \
+"../../../../DataMemory.srcs/sim_1/new/ProgramMemory_tb.v" \
+"../../../../DataMemory.srcs/sources_1/new/RegisterFile.v" \
+"../../../../DataMemory.srcs/sim_1/new/Register_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
